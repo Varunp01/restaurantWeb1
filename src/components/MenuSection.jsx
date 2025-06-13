@@ -1,5 +1,5 @@
 "use client"
-
+import { Link } from "react-router-dom"
 import { useState } from "react"
 
 function MenuSection({ fullMenu = false }) {
@@ -180,7 +180,7 @@ function MenuSection({ fullMenu = false }) {
                     <h3 className="font-medium">{item.name}</h3>
                     <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
                   </div>
-                  <div className="text-base font-medium">${item.price}</div>
+                  <div className="text-base font-medium">₹{item.price}</div>
                 </div>
               ))}
             </div>
@@ -189,7 +189,9 @@ function MenuSection({ fullMenu = false }) {
           {!fullMenu && (
             <div className="text-center mt-12">
               <button className="bg-primary text-primary-foreground px-6 py-3 rounded-md text-base font-medium hover:bg-primary/90 transition-colors">
+                      <Link to="/menu">
                 View Full Menu
+        </Link>
               </button>
             </div>
           )}

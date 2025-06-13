@@ -14,7 +14,7 @@ function Features() {
           <div className="bg-background rounded-lg overflow-hidden border-0 shadow-lg">
             <div className="aspect-[4/3] relative">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/Truffle Risotto.png"
                 alt="Truffle Risotto"
                 className="w-full h-full object-cover"
               />
@@ -31,7 +31,7 @@ function Features() {
           <div className="bg-background rounded-lg overflow-hidden border-0 shadow-lg">
             <div className="aspect-[4/3] relative">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/Herb-Crusted Lamb.png"
                 alt="Herb-Crusted Lamb"
                 className="w-full h-full object-cover"
               />
@@ -48,7 +48,7 @@ function Features() {
           <div className="bg-background rounded-lg overflow-hidden border-0 shadow-lg">
             <div className="aspect-[4/3] relative">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/Chocolate Soufflé.png"
                 alt="Chocolate Soufflé"
                 className="w-full h-full object-cover"
               />

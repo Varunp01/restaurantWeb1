@@ -1,11 +1,16 @@
+"use client"
+
+import { useState } from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import MenuSection from "../components/MenuSection"
 
 function Menu() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <main className="flex-1">
         <div className="container mx-auto py-16">
           <h1 className="text-4xl font-bold mb-6 text-center">Our Menu</h1>

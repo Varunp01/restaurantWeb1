@@ -7,14 +7,18 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/placeholder.svg?height=32&width=32" alt="Savoria Logo" className="w-8 h-8 rounded-md" />
-          <span className="text-xl font-bold">Savoria</span>
+          {/* <img src="/placeholder.svg?height=32&width=32" alt="Savoria Logo" className="w-8 h-8 rounded-md" /> */}
+          <img src="public\ZoomedLogo.png" alt="Savoria Logo" className="h-14 rounded-md" />
+          {/* <span className="text-xl font-bold">Savoria</span> */}
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
           <Link to="/" className="text-sm font-medium hover:text-primary">
             Home
+          </Link>
+          <Link to="/about" className="text-sm font-medium hover:text-primary">
+            About
           </Link>
           <HashLink smooth to="/#menu" className="text-sm font-medium hover:text-primary">
             Menu
@@ -72,6 +76,9 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
               <Link to="/" className="text-sm font-medium hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
                 Home
               </Link>
+              <Link to="/about" className="text-sm font-medium hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
+                About
+              </Link>
               <HashLink
                 smooth
                 to="/#menu"
@@ -107,15 +114,18 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                 className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Order Now
+                        <Link to="/menu">
+            Order Now
+        </Link>
               </button>
             </nav>
           </div>
         )}
-
-        <button className="hidden md:inline-flex bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
-          Order Now
-        </button>
+          <button className="hidden md:inline-flex bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
+        <Link to="/menu">
+            Order Now
+        </Link>
+          </button>
       </div>
     </header>
   )

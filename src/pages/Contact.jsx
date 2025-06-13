@@ -1,10 +1,15 @@
+"use client"
+
+import { useState } from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 function Contact() {
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <main className="flex-1 container mx-auto py-16">
         <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
 

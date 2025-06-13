@@ -5,9 +5,9 @@ function Hero() {
     <section className="relative">
       <div className="absolute inset-0 z-0">
         <img
-          src="/placeholder.svg?height=800&width=1600"
+          src="public\HeroCollage.png"
           alt="Restaurant ambiance"
-          className="w-full h-full object-cover brightness-[0.6]"
+          className="w-full h-full object-cover brightness-[0.2]"
         />
       </div>
       <div className="container mx-auto relative z-10 py-24 md:py-32 lg:py-40">
@@ -28,7 +28,7 @@ function Hero() {
             </Link>
             <Link
               to="/menu"
-              className="inline-flex justify-center items-center bg-white/10 text-white border border-white/20 hover:bg-white/20 px-6 py-3 rounded-md text-base font-medium transition-colors"
+              className="inline-flex justify-center items-center bg-white/10 text-white border border-white/20 hover:bg-white/40 hover:text-black px-6 py-3 rounded-md text-base font-medium transition-colors"
             >
               View Menu
               <svg
