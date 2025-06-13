@@ -8,7 +8,7 @@ function Footer() {
           {/* Column 1 */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="public\ZoomedLogo.png" alt="Savoria Logo" className="h-20 rounded-md" />
+              <img src="\ZoomedLogo.png" alt="Savoria Logo" className="h-20 rounded-md" />
               {/* <span className="text-xl font-bold">Savoria</span> */}
             </div>
             <p className="text-sm text-muted-foreground mb-4">

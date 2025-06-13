@@ -5,7 +5,7 @@ function Hero() {
     <section className="relative">
       <div className="absolute inset-0 z-0">
         <img
-          src="public\HeroCollage.png"
+          src="\HeroCollage.png"
           alt="Restaurant ambiance"
           className="w-full h-full object-cover brightness-[0.2]"
         />

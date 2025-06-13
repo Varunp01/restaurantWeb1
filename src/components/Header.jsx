@@ -8,7 +8,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           {/* <img src="/placeholder.svg?height=32&width=32" alt="Savoria Logo" className="w-8 h-8 rounded-md" /> */}
-          <img src="public\ZoomedLogo.png" alt="Savoria Logo" className="h-14 rounded-md" />
+          <img src="\ZoomedLogo.png" alt="Savoria Logo" className="h-14 rounded-md" />
           {/* <span className="text-xl font-bold">Savoria</span> */}
         </div>
 
