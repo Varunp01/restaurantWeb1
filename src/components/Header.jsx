@@ -8,30 +8,30 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
       <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           {/* <img src="/placeholder.svg?height=32&width=32" alt="Savoria Logo" className="w-8 h-8 rounded-md" /> */}
-          <Link to="/">
+          <HashLink smooth to="/savoria-restaurant/#heroSection" >
           <img src="\ZoomedLogo.png" alt="Savoria Logo" className="h-14 rounded-md" />
-          </Link>
+          </HashLink>
           {/* <span className="text-xl font-bold">Savoria</span> */}
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
-          <Link to="/" className="text-sm font-medium hover:text-primary">
+          <HashLink smooth to="/savoria-restaurant/#heroSection" className="text-sm font-medium hover:text-primary">
             Home
-          </Link>
-          <Link to="/about" className="text-sm font-medium hover:text-primary">
+          </HashLink>
+          <Link to="about" className="text-sm font-medium hover:text-primary">
             About
           </Link>
-          <HashLink smooth to="/#menu" className="text-sm font-medium hover:text-primary">
+          <HashLink smooth to="/savoria-restaurant/#menu" className="text-sm font-medium hover:text-primary">
             Menu
           </HashLink>
-          <HashLink smooth to="/#features" className="text-sm font-medium hover:text-primary">
+          <HashLink smooth to="/savoria-restaurant/#features" className="text-sm font-medium hover:text-primary">
             Specialties
           </HashLink>
-          <HashLink smooth to="/#testimonials" className="text-sm font-medium hover:text-primary">
+          <HashLink smooth to="/savoria-restaurant/#testimonials" className="text-sm font-medium hover:text-primary">
             Testimonials
           </HashLink>
-          <Link to="/contact" className="text-sm font-medium hover:text-primary">
+          <Link to="contact" className="text-sm font-medium hover:text-primary">
             Contact
           </Link>
         </nav>
@@ -75,15 +75,15 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
         {mobileMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b p-4 shadow-lg">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="text-sm font-medium hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
+              <HashLink smooth to="/savoria-restaurant/#heroSection" className="text-sm font-medium hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
                 Home
-              </Link>
-              <Link to="/about" className="text-sm font-medium hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
+              </HashLink>
+              <Link to="about" className="text-sm font-medium hover:text-primary" onClick={() => setMobileMenuOpen(false)}>
                 About
               </Link>
               <HashLink
                 smooth
-                to="/#menu"
+                to="/savoria-restaurant/#menu"
                 className="text-sm font-medium hover:text-primary"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -91,7 +91,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
               </HashLink>
               <HashLink
                 smooth
-                to="/#features"
+                to="/savoria-restaurant/#features"
                 className="text-sm font-medium hover:text-primary"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -99,14 +99,14 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
               </HashLink>
               <HashLink
                 smooth
-                to="/#testimonials"
+                to="/savoria-restaurant/#testimonials"
                 className="text-sm font-medium hover:text-primary"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Testimonials
               </HashLink>
               <Link
-                to="/contact"
+                to="contact"
                 className="text-sm font-medium hover:text-primary"
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -116,7 +116,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
                 className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                        <Link to="/menu">
+                        <Link to="menu">
             Order Now
         </Link>
               </button>
@@ -124,7 +124,7 @@ function Header({ mobileMenuOpen, setMobileMenuOpen }) {
           </div>
         )}
           <button className="hidden md:inline-flex bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
-        <Link to="/menu">
+        <Link to="menu">
             Order Now
         </Link>
           </button>

@@ -189,7 +189,7 @@ function MenuSection({ fullMenu = false }) {
           {!fullMenu && (
             <div className="text-center mt-12">
               <button className="bg-primary text-primary-foreground px-6 py-3 rounded-md text-base font-medium hover:bg-primary/90 transition-colors">
-                      <Link to="/menu">
+                      <Link to="menu">
                 View Full Menu
         </Link>
               </button>
