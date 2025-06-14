@@ -15,7 +15,7 @@ function Footer() {
               Bringing culinary excellence to your table since 2010. Our passion is creating memorable dining
               experiences.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a href="#" className="text-muted-foreground hover:text-foreground">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ function Footer() {
                 </svg>
                 <span className="sr-only">Twitter</span>
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2 */}
@@ -110,23 +110,13 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground">
-                  Careers
+                <a href="/menu" className="text-muted-foreground hover:text-foreground">
+                  Menu
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground">
+                <a href="/contact" className="text-muted-foreground hover:text-foreground">
                   Private Events
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground">
-                  Gift Cards
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground">
-                  Privacy Policy
                 </a>
               </li>
             </ul>

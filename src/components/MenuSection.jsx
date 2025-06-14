@@ -180,7 +180,7 @@ function MenuSection({ fullMenu = false }) {
                     <h3 className="font-medium">{item.name}</h3>
                     <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
                   </div>
-                  <div className="text-base font-medium">₹{item.price}</div>
+                  <div className="text-base font-medium">${item.price}</div>
                 </div>
               ))}
             </div>
