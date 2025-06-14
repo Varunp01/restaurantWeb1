@@ -13,6 +13,8 @@ function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
+    <div className="flex min-h-screen flex-col">
+      <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <main className="flex-1">
         <Hero />
         <Features />
@@ -20,6 +22,8 @@ function Home() {
         <Testimonials />
         <CallToAction />
       </main>
+      <Footer />
+    </div>
   )
 }
 

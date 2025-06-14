@@ -8,6 +8,8 @@ function About() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
+    <div className="flex min-h-screen flex-col">
+      <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <main className="flex-1 container mx-auto py-16">
         <h1 className="text-4xl font-bold mb-6">About Savoria</h1>
         <p className="mb-4">
@@ -25,6 +27,8 @@ function About() {
           every visit to Savoria special. We look forward to welcoming you soon.
         </p>
       </main>
+      <Footer />
+    </div>
   )
 }
 

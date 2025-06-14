@@ -13,13 +13,13 @@ function CallToAction() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
             <Link
-              to="contact"
+              to="/contact"
               className="inline-flex justify-center items-center bg-white text-primary px-6 py-3 rounded-md text-base font-medium hover:bg-white/90 transition-colors"
             >
               Reserve a Table
             </Link>
             <Link
-              to="menu"
+              to="/menu"
               className="inline-flex justify-center items-center bg-transparent border border-primary-foreground/30 hover:bg-primary-foreground/10 px-6 py-3 rounded-md text-base font-medium transition-colors"
             >
               Order Online

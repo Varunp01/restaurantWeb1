@@ -105,17 +105,17 @@ function Footer() {
             <h3 className="font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="about" className="text-muted-foreground hover:text-foreground">
+                <Link to="/about" className="text-muted-foreground hover:text-foreground">
                   About Us
                 </Link>
               </li>
               <li>
-                <a href="menu" className="text-muted-foreground hover:text-foreground">
+                <a href="/menu" className="text-muted-foreground hover:text-foreground">
                   Menu
                 </a>
               </li>
               <li>
-                <a href="contact" className="text-muted-foreground hover:text-foreground">
+                <a href="/contact" className="text-muted-foreground hover:text-foreground">
                   Private Events
                 </a>
               </li>

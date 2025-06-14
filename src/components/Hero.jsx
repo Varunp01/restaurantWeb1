@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function Hero() {
   return (
-    <section className="relative" id="heroSection">
+    <section className="relative">
       <div className="absolute inset-0 z-0">
         <img
           src="\HeroCollage.png"
@@ -21,13 +21,13 @@ function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
             <Link
-              to="contact"
+              to="/contact"
               className="inline-flex justify-center items-center bg-primary text-primary-foreground px-6 py-3 rounded-md text-base font-medium hover:bg-primary/90 transition-colors"
             >
               Reserve a Table
             </Link>
             <Link
-              to="menu"
+              to="/menu"
               className="inline-flex justify-center items-center bg-white/10 text-white border border-white/20 hover:bg-white/40 hover:text-black px-6 py-3 rounded-md text-base font-medium transition-colors"
             >
               View Menu
