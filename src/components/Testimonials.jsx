@@ -36,7 +36,7 @@ function Testimonials() {
                 <span className="font-medium text-sm">JD</span>
               </div>
               <div>
-                <p className="font-medium">Jane Doe</p>
+                <p className="font-medium">Janet Scott</p>
                 <p className="text-sm text-muted-foreground">Food Critic</p>
               </div>
             </div>
